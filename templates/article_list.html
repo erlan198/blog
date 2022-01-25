@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1> спикок публикации</h1>
+    {% for article in article_list %}
+    <h3> {{article.title}} </h3>
+    <h3> {{article.description}} </h3>
+
+<p>hello</p>
+<a href="http://youtube.com">ссылка на данную публикацию</a>
+<a href="{% url "article-detail-url" article.id %}"
+    <br>
+{% endfor %}
+</body>
+</html>
